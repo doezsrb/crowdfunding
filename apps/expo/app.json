@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "name": "crowdfunding",
+    "slug": "crowdfunding",
+    "version": "1.0.0",
+    "scheme": "crowdfunding",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.crowdfunding.test"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5eb95321-e0ce-4b10-8f2b-0d2b0dde2080"
+      }
+    }
+  }
+}
