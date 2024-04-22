@@ -17,6 +17,11 @@ const nextConfig = {
     'react-native-reanimated',
     'nativewind',
     'react-native-gesture-handler',
+    'react-moralis',
+    'moralis',
+
+    'react-native-safe-area-context',
+    'react-native-vector-icons',
   ],
 }
 

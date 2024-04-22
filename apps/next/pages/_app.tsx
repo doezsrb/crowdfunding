@@ -4,10 +4,13 @@ import 'setimmediate'
 import { Provider } from 'app/provider'
 import Head from 'next/head'
 import React from 'react'
-
+import { WagmiProvider } from 'wagmi'
+import { config } from '../blockchain-settings/config'
 import '../global.css'
 import { AppProps } from 'next/app'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
+const queryClient = new QueryClient()
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
@@ -20,7 +23,11 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Provider>
-        <Component {...pageProps} />
+        <WagmiProvider config={config}>
+          <QueryClientProvider client={queryClient}>
+            <Component {...pageProps} />
+          </QueryClientProvider>
+        </WagmiProvider>
       </Provider>
     </>
   )

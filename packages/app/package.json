@@ -5,6 +5,8 @@
   "dependencies": {
     "moti": "latest",
     "nativewind": "2.0.11",
+    "react-native-paper": "^5.12.3",
+    "react-native-vector-icons": "^10.0.3",
     "solito": "4.0.1"
   },
   "sideEffects": false

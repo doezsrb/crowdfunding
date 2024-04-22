@@ -1,5 +1,6 @@
-import { HomeScreen } from 'app/features/home/screen'
+import { Redirect } from 'expo-router'
 
-export default function Home() {
-  return <HomeScreen />
+const Index = () => {
+  return <Redirect href="/connect" />
 }
+export default Index
