@@ -1,9 +1,9 @@
 import { Text } from 'app/design/typography'
 import { View } from 'app/design/view'
-import { useReadContract, useWatchContractEvent } from 'app/common/WagmiHooks'
+import { useReadContract, useWatchContractEvent } from 'app/common/Web3Hooks'
 import { abi, contractAddress } from '../common/constants'
 import { useEffect, useState } from 'react'
-import { formatEther } from 'app/common/WagmiHooks'
+import { formatEther } from 'app/common/Web3Hooks'
 
 const Goal = () => {
   const [amount, setAmount] = useState(0)

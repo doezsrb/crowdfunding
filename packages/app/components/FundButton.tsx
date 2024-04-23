@@ -6,7 +6,7 @@ import {
   useWriteContract,
   useWaitForTransactionReceipt,
   parseEther,
-} from 'app/common/WagmiHooks'
+} from 'app/common/Web3Hooks'
 
 import { abi, contractAddress } from '../common/constants'
 
