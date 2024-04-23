@@ -8,7 +8,7 @@ import {
   useReadContract,
   useWatchContractEvent,
   formatEther,
-} from 'app/common/Web3Hooks'
+} from 'app/common/WagmiHooks'
 
 const LastFunders = () => {
   type Funder = {

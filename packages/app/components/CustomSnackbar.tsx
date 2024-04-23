@@ -20,7 +20,7 @@ const CustomSnackbar = ({ type, open, close }: CustomSnackbarProps) => {
       style={{ display: open ? 'block' : 'none' } as any}
       className={` ${
         type == 'SUCCESS' ? 'bg-teal-500' : 'bg-red-500'
-      } absolute bottom-5 left-5 z-10 flex  h-10 w-60 justify-center rounded-md `}
+      } absolute bottom-20 left-0 z-10 flex  h-10 w-[100%] justify-center rounded-md md:left-5 md:w-60 `}
     >
       <Text className="text-center font-extralight text-white">{type}</Text>
     </View>
